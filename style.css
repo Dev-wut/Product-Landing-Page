@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-green: #5ec989;
+  --dark-green: rgb(32, 37, 37);
+  --light-white: rgb(226, 226, 226);
+  --black: #111513;
+}
+
+body {
+  background-color: var(--dark-green);
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  background-color: var(--dark-green);
+}
+
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+header #header-img{
+  max-width: 70px;
+  height: auto;
+  border-radius: 50%;
+}
+
+header li {
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--light-green);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.wrapper-nav-link {
+  width: 30%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: 15vh;
+  }
+
+  .wrapper-nav-link {
+    width: 80%;
+  }
+}
+
+.container {
+  margin: 8vh 10% 0px 10%;
+}
+
+.video-section {
+  padding: 80px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--light-white);
+}
+
+#video-title {
+  color: var(--light-green);
+  font-size: 23px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+#video-description {
+  margin-top: 15px;
+  max-width: 45%;
+}
+
+.responsive-iframe {
+  margin-top: 15px;
+  max-width: 560px;
+  padding: 0px 3%;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  #video-description {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #video-description {
+    max-width: 85%;
+  }
+}
+
+.vision-section {
+  padding: 80px;
+  color: var(--light-white);
+}
+
+@media screen and (max-width: 375px) {
+  .vision-section {
+    padding: 15px;
+  }
+}
+
+#vision-title {
+  text-align: center;
+  color: var(--light-green);
+  font-weight: bolder;
+  padding-bottom: 23px;
+  letter-spacing: 1px;
+}
+
+.notified-section {
+  border-top: 1px solid var(--light-green);
+  border-bottom: 1px solid var(--light-green);
+}
+
+.form-notified {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px;
+  text-align: center;
+}
+
+form > #email {
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+form > #submit {
+  margin-top: 20px;
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--light-green);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 375px) {
+  form > #submit {
+    padding: 5px 60px;
+  }
+
+  .form-notified {
+    width: 100%;
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+}
+
+@media screen and (min-width: 376px) {
+  form > #submit {
+    max-width: 100%;
+  }
+  .form-notified {
+    width: 100%;
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+}
+
+#out-roadmap {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--light-green);
+  padding: 60px 0px;
+  letter-spacing: 1px;
+}
+
+.roadmap-section {
+  padding: 80px;
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+.roadmap-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  background-color: var(--black);
+}
+
+#roadmap-header {
+  color: black;
+  background-color: var(--light-green);
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.roadmap-box > ol {
+  margin: 15px 0;
+}
+
+.roadmap-box > ol > li {
+  color: white;
+  padding: 5px 0;
+  list-style: none;
+}
+
+.roadmap-box > .btn-view {
+  border: 0;
+  margin: 15px 0;
+  padding: 5px 20px;
+  border-radius: 8px;
+  background-color: var(--light-green);
+  font-weight: 400;
+}
+
+@media screen and (max-width: 375px) {
+  .roadmap-section {
+    padding: 0px 0px 100px 0px;
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .roadmap-section {
+    padding: 0px 0px 100px 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .roadmap-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .roadmap-box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .roadmap-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .roadmap-box {
+    width: 80%;
+  }
+}
+
+footer {
+  margin-top: 5px;
+  background-color: var(--black);
+  color: var(--light-green);
+  padding: 10px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+  list-style: none;
+}
+
+footer > ul > li > a {
+  text-decoration: none;
+  color: var(--light-green);
+}
+
+footer > span {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9em;
+}
